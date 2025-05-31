@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Robot Events</title>
+  <link rel="stylesheet" href="style.css" />
+  <link 
+  href="https://fonts.googleapis.com/css2?family=Black+Ops+One&display=swap" 
+  rel="stylesheet"
+/>
+<script src="https://unpkg.com/gsap@3/dist/gsap.min.js"></script>
+<script src="https://unpkg.com/gsap@3/dist/ScrollTrigger.min.js"></script>
+
+
+</head>
+<body>
+<spline-viewer class="events-spline" url="https://prod.spline.design/5BYuB6r7X2v9ZTb8/scene.splinecode"></spline-viewer>
+
+  <nav class="navbar">
+    <h1 class="logo">AAA</h1>
+    <ul class="menu">
+      <li><a href="index.html"><span>Home</span></a></li>
+      <li><a href="events.html"><span>Events</span></a></li>
+      <li><a href="future.html"><span>Future Games</span></a></li>
+    </ul>
+    <a href="connect.html"><button class="btn1">Connect</button></a>
+
+  </nav>
+
+<div class="event-block" style="flex-direction: row-reverse;">
+  <div class="event-video" style="flex: 1; max-width: 360px;">
+    <video src="videos/toyota-cue.MOV" autoplay muted loop style="width: 100%; border-radius: 12px;"></video>
+  </div>
+  <div class="event-description" style="flex: 1;">
+    <h3>Toyota’s CUE: The Machine That Never Misses</h3>
+    <p>
+      Meet Toyota’s CUE — a humanoid robot built by Toyota engineers in their spare time, 
+      and one of the most accurate shooters in basketball history. With no emotion and no fatigue, 
+      CUE earned a Guinness World Record for the most consecutive free throws ever made by a robot. 
+      It’s not just tech on display — it’s a blend of passion, precision, and serious ball skills. 
+      Watching CUE shoot feels less like a gimmick and more like a glimpse into basketball’s automated future.
+    </p>
+  </div>
+</div>
+
+
+
+
+
+
+  <div class="event-block" style="flex-direction: row;">
+    <div class="event-video" style="flex: 1; max-width: 360px;">
+      <video src="videos/robot-tennis.MOV" autoplay muted loop style="width: 100%; border-radius: 12px;"></video>
+    </div>
+    <div class="event-description" style="flex: 1;">
+      <h3>AI Grand Slam</h3>
+      <p>
+        In this futuristic twist on pro tennis, humanoid robots take to the court 
+        with real-time vision, agility, and predictive shot control. Powered by AI 
+        and reinforced learning, these robots aren't just playing — they’re competing 
+        at professional level speed, pushing boundaries of motion and reaction time. 
+        Could we soon see cyborgs in Grand Slam finals?
+      </p>
+    </div>
+  </div>
+
+
+  <div class="event-block" style="flex-direction: row-reverse;">
+  <div class="event-video" style="flex: 1; max-width: 360px;">
+    <video src="videos/robot-boxing.MOV" autoplay muted loop style="width: 100%; border-radius: 12px;"></video>
+  </div>
+  <div class="event-description" style="flex: 1;">
+    <h3>Battle Bots Arena</h3>
+    <p>
+      It’s not just fists flying anymore. In this underground-style ring, AI-powered boxing robots 
+      square up with footwork, dodges, and punches that mimic real athletes. Built to take hits and 
+      give them back harder, these machines are trained on hours of professional fight footage. 
+      They don't get tired, and they never back down. 
+      It's brutal, fast, and fascinating—where steel meets instinct.
+    </p>
+  </div>
+</div>
+
+<div class="event-block" style="flex-direction: row;">
+  <div class="event-video" style="flex: 1; max-width: 360px;">
+    <video src="videos/robot.MOV" autoplay muted loop style="width: 100%; border-radius: 12px;"></video>
+  </div>
+  <div class="event-description" style="flex: 1;">
+   <h3>Triple Serve Challenge</h3>
+<p>
+  Three players. One robot. What sounds like an unfair match turns into a jaw-dropping rally. 
+  The bot takes on a trio of human opponents with sharp reflexes and flawless timing. 
+  Designed for speed and adaptability, it tracks every ball with laser focus — holding its own 
+  against fast serves and tricky angles. Whether you call it tennis or something else, 
+  this is pure proof that robots are more than ready for the court.
+</p>
+
+  </div>
+</div>
+
+<script>
+  gsap.registerPlugin(ScrollTrigger);
+
+  gsap.utils.toArray('.event-block').forEach((block, i) => {
+    gsap.from(block, {
+      opacity: 0,
+      y: 100,
+      rotateY: i % 2 === 0 ? 10 : -10,
+      duration: 1,
+      ease: "power3.out",
+      scrollTrigger: {
+        trigger: block,
+        start: "top 80%",
+      }
+    });
+  });
+</script>
+
+
+</body>
+</html>

@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Connect</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <nav class="navbar">
+    <h1 class="logo">AAA</h1>
+    <ul class="menu">
+      <li><a href="index.html"><span>Home</span></a></li>
+      <li><a href="events.html"><span>Events</span></a></li>
+      <li><a href="future.html"><span>Future Games</span></a></li>
+    </ul>
+    <a href="connect.html"><button class="btn1">Connect</button></a>
+  </nav>
+
+  <div class="connect-wrapper">
+    <h2>Want to get in touch?</h2>
+    <button class="reveal-btn" onclick="showForm()">Yes, let's talk</button>
+
+    <form class="contact-form" id="contactForm">
+      <input type="text" placeholder="Your Name" required />
+      <input type="email" placeholder="Your Email" required />
+      <textarea rows="4" placeholder="Your Message" required></textarea>
+      <button type="submit">Send Message</button>
+    </form>
+  </div>
+
+  <script>
+    function showForm() {
+      const form = document.getElementById("contactForm");
+      form.style.display = "flex";
+    }
+  </script>
+
+</body>
+</html>
