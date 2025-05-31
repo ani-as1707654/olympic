@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Olympic Spirit</title>
+  <link rel="stylesheet" href="style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&family=Rajdhani:wght@600&display=swap" rel="stylesheet">
+</head>
+<body>
+
+  <!-- Header Title -->
+  <header class="site-title">
+    <h1>Olympic Spirit</h1>
+  </header>
+  
+
+  <!-- Navigation -->
+  <nav class="navbar">
+    <a href="index.html" class="active">Home</a>
+    <a href="game.html">Game</a>
+    <a href="stories.html">Stories</a>
+  </nav>
+
+  <section class="hero-video-banner">
+    <div class="video-wrapper">
+      <video autoplay muted loop playsinline>
+        <source src="media/videos/beach2.mp4" type="video/mp4" />
+        Your browser does not support the video tag.
+      </video>
+    </div>
+    <div class="hero-text">
+      You're viewing the Olympic Spirit 
+    </div>
+  </section>
+  
+
+
+  
+  <!-- Intro -->
+  <section class="intro-section">
+    <p class="intro-text">
+      The Olympics symbolize the pursuit of excellence, unity among nations, and the values that uplift humanity through sport.
+    </p>
+  </section>
+
+  <!-- Core Values -->
+  <section class="core-values-section">
+    <h2 class="core-title">Olympic Core Values</h2>
+
+    <div class="core-row">
+      <div class="core-box">
+        <h3>Excellence</h3>
+        <p>A commitment to pushing boundaries, striving for personal improvement, and giving your best effort in every challenge—both in sport and in everyday life.</p>
+      </div>
+      <div class="core-box">
+        <h3>Friendship</h3>
+        <p>A spirit of unity that connects people across borders, encouraging teamwork, cultural understanding, and lifelong bonds formed through mutual respect and shared goals.</p>
+      </div>
+      <div class="core-box">
+        <h3>Respect</h3>
+        <p>A mindset rooted in fairness, where every individual is treated with dignity, rules are followed, and diversity is embraced in both sport and everyday life.</p>
+      </div>
+    </div>
+  </section>
+
+
+  <section class="image-carousel">
+    <div class="carousel-track">
+      <img src="media/images/image1.jpeg" alt="Olympic 1" />
+      <img src="media/images/image4.jpg" alt="Olympic 2" />
+      <img src="media/images/image3.jpeg" alt="Olympic 3" />
+      <img src="media/images/image5.jpg" alt="Olympic 4" />
+      <img src="media/images/image2.jpeg" alt="Olympic 5" />
+      <img src="media/images/image6.jpg" alt="Olympic 6" />
+      <img src="media/images/image1.jpeg" alt="Olympic 1" />
+      <img src="media/images/image4.jpg" alt="Olympic 2" />
+      <img src="media/images/image3.jpeg" alt="Olympic 3" />
+      <img src="media/images/image5.jpg" alt="Olympic 4" />
+      <img src="media/images/image2.jpeg" alt="Olympic 5" />
+      <img src="media/images/image6.jpg" alt="Olympic 6" />
+    </div>
+  </section>
+  
+  
+  
+  
+  
+
+
+
+  <!-- OIP Image + Ring Sentences -->
+  <section class="ring-meaning-section">
+    <!-- OIP Image stays -->
+    <img src="media/images/OIP.jpg" alt="Olympic Rings" class="olympic-img" />
+  
+    <!-- Now the colored ring cards with paragraph meanings -->
+    <div class="ring-sentences">
+      <div class="ring-box blue">
+        <h4>Read to understand</h4>
+        <p>True learning begins with deep understanding. Reading with intent helps us grasp not just the facts, but the meaning behind them.</p>
+      </div>
+      <div class="ring-box yellow">
+        <h4>Apply expertise to win</h4>
+        <p>Success isn't just about knowing — it's about doing. Applying knowledge with precision leads to meaningful achievement.</p>
+      </div>
+      <div class="ring-box black">
+        <h4>Understand to practice</h4>
+        <p>Before taking action, one must comprehend. Understanding builds the foundation for effective and purposeful practice.</p>
+      </div>
+      <div class="ring-box green">
+        <h4>Win with humility</h4>
+        <p>Victory is most honorable when paired with grace. A humble champion uplifts others and earns lasting respect.</p>
+      </div>
+      <div class="ring-box red">
+        <h4>Practice to gain expertise</h4>
+        <p>Consistent practice transforms skills into mastery. Every repetition brings you closer to excellence.</p>
+      </div>
+    </div>
+  </section>
+  
+
+  
+ <!-- Clock Section -->
+<section class="clock-section">
+  <h2>Your Local Time</h2>
+  <p id="local-time">Loading...</p>
+</section>
+
+<!-- Link JavaScript file -->
+<script src="script.js"></script>
+</body>
+</html>
+
+
+<!-- 3d design using vanilla lib -->
+<!-- VanillaTilt.js CDN -->
+<script src="https://cdn.jsdelivr.net/npm/vanilla-tilt@1.7.3/dist/vanilla-tilt.min.js"></script>
+
+<!-- Initialize the tilt effect -->
+<script>
+  VanillaTilt.init(document.querySelectorAll(".tilt-img"), {
+    max: 15,
+    speed: 400,
+    glare: true,
+    "max-glare": 0.3,
+    perspective: 1000
+  });
+</script>
+
+
+
+
+
+  
+</body>
+</html>

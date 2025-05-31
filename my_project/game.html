@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Olympic Trivia Sprint</title>
+  <link rel="stylesheet" href="style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&family=Rajdhani:wght@600&display=swap" rel="stylesheet">
+</head>
+<body class="dark-mode">
+     <audio id="timer-sound" src="media/sounds/timer-start.mp3" preload="auto"></audio>
+
+  <!-- Header Title -->
+  <header class="site-title">
+    <h1>Olympic Spirit</h1>
+  </header>
+
+  <!-- Navigation -->
+  <nav class="navbar">
+    <a href="index.html">Home</a>
+    <a href="game.html" class="active">Game</a>
+    <a href="stories.html">Stories</a>
+  </nav>
+
+  <!-- Hero Banner -->
+  <section class="hero-video-banner">
+    <div class="video-wrapper">
+      <video autoplay muted loop playsinline>
+        <source src="media/videos/m.MOV" type="video/mp4" />
+        Your browser does not support the video tag.
+      </video>
+    </div>
+    <div class="hero-text">
+      Test Your Olympic Knowledge
+    </div>
+  </section>
+
+  <!-- Game Wrapper -->
+  <div class="intro-section">
+    <!-- Start Screen -->
+    <div id="start-screen">
+      <p class="intro-text">
+        Get ready to sprint through Olympic trivia! Each correct answer takes you closer to the finish line.
+      </p>
+      <button id="start-btn" class="btn-style">Start Game</button>
+    </div>
+
+    <!-- Quiz Screen -->
+    <div id="quiz-screen" style="display: none;">
+      <div id="question-box" class="card-style">
+        <h2 id="question-text">Question text</h2>
+        <div id="choices-container"></div>
+        <p id="timer">Time left: <span id="time">15</span>s</p>
+      </div>
+    </div>
+
+    <!-- Result Screen -->
+    <div id="result-screen" style="display: none;">
+      <h2 id="result-text">You finished!</h2>
+      <button id="restart-btn" class="btn-style">Play Again</button>
+    </div>
+  </div>
+
+  <!-- External JS -->
+  <script src="game.js"></script>
+ 
+
+</body>
+</html>
